@@ -1,0 +1,39 @@
+ [ 
+    {
+    
+        "idmenu" :28,
+        "idkategori" : 4,
+        "menu" : "Apel Manalagi",
+        "harga" : 3000,
+        "warna" : ["merah","kuning","hijau"],
+        "stok" : true,
+        "keterangan" : null
+    
+    },
+    {
+        
+        "idmenu" :29,
+        "idkategori" : 4,
+        "menu" : "Pisang Raja",
+        "harga" : 4000,
+        "warna" : ["merah","hijau"],
+        "stok" : false,
+        "keterangan" : null
+    
+    },
+    {
+        
+        "idmenu" :29,
+        "idkategori" : 4,
+        "menu" : "Salak",
+        "harga" : 4000,
+        "warna" : ["merah","hijau"],
+        "stok" : false,
+        "keterangan" : null
+    
+    }
+    
+    ]
+    
+
+    
