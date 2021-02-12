@@ -14,11 +14,12 @@ function Menu() {
         ]
     );
     return (
+
       <div className="App">
-       <div className="App">
         <Tabel menu={menus} titel = {titel} />
+         <Tabel menu={menus.filter((data)=>(data.idkategori===4))} titel = "MENU BUAH" />
       </div>
-      </div>
+
     );
   }
   
