@@ -27,9 +27,16 @@ class KategoriController extends Controller
     public function create(Request $request)
     {
         //
-        Kategori::create($request->all());
 
-        return response()->json('Data sudah dimasukan');
+        $this->validate($request,[
+            'kategori' => 'required|unique:kategoris',
+            'keterangan' => 'required'
+        ]);
+
+
+       $kategori = Kategori::create($request->all());
+
+        return response()->json($kategori);
     }
 
     /**
