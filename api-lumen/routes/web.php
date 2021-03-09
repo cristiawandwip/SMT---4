@@ -48,5 +48,11 @@ $router->get('/', function () use ($router) {
 
     $router->get('menu', ['uses' => 'MenuController@index']);
 
+    $router->delete('menu/{id}', ['uses' => 'MenuController@destroy']);
+
+    $router->get('menu/{id}', ['uses' => 'MenuController@show']);
+
+    $router->post('menu/{id}', ['uses' => 'MenuController@update']);
+
 
 });
