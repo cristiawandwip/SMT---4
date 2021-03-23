@@ -161,6 +161,7 @@ const Order = () => {
           <thead>
             <tr>
               <th>No</th>
+              <th>Faktur</th>
               <th>Pelanggan</th>
               <th>Tgl Order</th>
               <th>Total</th>
@@ -173,6 +174,7 @@ const Order = () => {
             {isi.map((val, index) => (
               <tr key={index}>
                 <td>{no++}</td>
+                <td>{val.idorder}</td>
                 <td>{val.pelanggan}</td>
                 <td>{val.tglorder}</td>
                 <td>{val.total}</td>
@@ -181,7 +183,7 @@ const Order = () => {
                 <td>
                   {val.status === 0 ? (
                     <button
-                      className="btn btn-danger"
+                      className="btn btn-danger "
                       onClick={() => filterdata(val.idorder)}
                     >
                       Belum Bayar
