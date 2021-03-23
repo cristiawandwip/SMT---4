@@ -60,5 +60,11 @@ $router->get('/', function () use ($router) {
 
     $router->get('order/{a}/{b}', ['uses' => 'OrderController@show']);
 
+    $router->get('detail/{a}/{b}', ['uses' => 'DetailController@show']);
+
+    $router->get('user', ['uses' => 'LoginController@index']);
+
+    $router->put('user/{id}' ,['uses' =>'LoginController@update'] );
+
 
 });
