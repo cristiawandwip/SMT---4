@@ -25,6 +25,11 @@ const Order = () => {
 
   const [isi] = useGet(`/order/${awal}/${akhir}`);
 
+ const tes = {
+   fontSize: 13,
+   width: 100
+ };
+
   function filterdata(id) {
     const data = isi.filter((val) => val.idorder === id);
 
@@ -182,11 +187,12 @@ const Order = () => {
                 <td>{val.kembali}</td>
                 <td>
                   {val.status === 0 ? (
-                    <button
-                      className="btn btn-danger "
+                    <button 
+                      style={tes}
+                      className="btn btn-danger"
                       onClick={() => filterdata(val.idorder)}
                     >
-                      Belum Bayar
+                     Belum Bayar
                     </button>
                   ) : (
                     <p>Lunas</p>
